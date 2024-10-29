@@ -154,7 +154,7 @@ img {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     padding: 2.5rem 0;
     width: 90px;
-    top: 3rem;
+    top: -100%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -169,10 +169,34 @@ img {
   align-items: center;
   row-gap: 1.5rem;
 }
+.nav__link, .nav__logo, .nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+.nav__toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
 
 /* Show menu */
+.show-menu {
+  top: calc(var(--header-height) + 1rem);
+}
+
 /* Change background header */
 /*=============== HOME ===============*/
+.home__container {
+  row-gap: 3rem;
+}
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-0-75);
+}
+.home__description {
+  margin-bottom: var(--mb-2);
+}
+
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
@@ -209,6 +233,13 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about__container {
+  gap: 2.5rem;
+}
+.about__data {
+  text-align: center;
+}
+
 /*=============== SECURITY ===============*/
 /*=============== SERVICES ===============*/
 /*=============== APP ===============*/

@@ -23,7 +23,7 @@
             box-shadow: 0 0 4px rgba(0, 0, 0, .1);
             padding: 2.5rem 0;
             width: 90px;
-            top: 3rem;
+            top: -100%;
             left: 0;
             right: 0;
             margin: 0 auto;
@@ -39,9 +39,23 @@
         align-items: center;
         row-gap: 1.5rem;
     }
+
+    &__link,
+    &__logo,
+    &__toggle {
+        color: var(--title-color);
+        font-weight: var(--font-semi-bold);
+    }
+
+    &__toggle {
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
 }
 
 /* Show menu */
-
+.show-menu {
+    top: calc(var(--header-height) + 1rem); // 4rem
+}
 
 /* Change background header */
