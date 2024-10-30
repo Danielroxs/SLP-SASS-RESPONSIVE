@@ -221,16 +221,6 @@ img {
 .button-link:hover {
   background-color: transparent;
 }
-.button-flex {
-  display: inline-flex;
-  align-items: center;
-  -moz-column-gap: 0.25rem;
-       column-gap: 0.25rem;
-  padding: 0.75rem 1rem;
-}
-.button__icon {
-  font-size: 1.5rem;
-}
 
 /*=============== ABOUT ===============*/
 .about__container {
@@ -241,7 +231,32 @@ img {
 }
 
 /*=============== SECURITY ===============*/
+.security__container {
+  gap: 2.5rem;
+}
+.security__description {
+  text-align: center;
+}
+
 /*=============== SERVICES ===============*/
+.services__container {
+  padding-top: 1rem;
+}
+.services__data {
+  display: grid;
+  row-gap: 1rem;
+  background-color: var(--container-color);
+  box-shadow: 0 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.services__img {
+  width: 135px;
+  justify-self: center;
+  margin-bottom: var(--mb-0-5);
+}
+
 /*=============== APP ===============*/
 /*=============== CONTACT ===============*/
 /*=============== FOOTER ===============*/
