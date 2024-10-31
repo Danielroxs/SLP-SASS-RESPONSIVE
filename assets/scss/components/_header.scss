@@ -17,12 +17,12 @@
     align-items: center;
 
     &__menu {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             position: fixed;
             background-color: var(--container-color);
             box-shadow: 0 0 4px rgba(0, 0, 0, .1);
             padding: 2.5rem 0;
-            width: 90px;
+            width: 90%;
             top: -100%;
             left: 0;
             right: 0;
@@ -58,4 +58,23 @@
     top: calc(var(--header-height) + 1rem); // 4rem
 }
 
+/* Active Link */
+.active-link {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -.75rem;
+        left: 45%;
+        width: 5px;
+        height: 5px;
+        background-color: var(--title-color);
+        border-radius: 50%;
+    }
+}
+
 /* Change background header */
+.scroll-header {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+}
